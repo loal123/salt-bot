@@ -1,0 +1,15 @@
+.envrc
+.env
+   
+build/
+compile_commands.json
+
+salt_bot
+
+.nvim/
+.nvim.lua
+.cache/
+
+.DS_Store
+Thumbs.db
+
