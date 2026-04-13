@@ -9,7 +9,7 @@
 
 void say_quote(const dpp::slashcommand_t &event) {
     std::vector<std::string> quotes;
-    std::ifstream file("../resources/quotes.txt");
+    std::ifstream file("/resources/quotes.txt");
     std::string quoteline;
     if (file.is_open()) 
     {
