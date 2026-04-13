@@ -1,6 +1,7 @@
 # Stage 1: The Build Environment
 FROM heroku/heroku:24-build AS build
 
+USER root
 # Install build tools
 RUN apt-get update && apt-get install -y \
     cmake \
