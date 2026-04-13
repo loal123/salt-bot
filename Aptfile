@@ -1,0 +1,6 @@
+libdpp-dev
+libssl-dev
+zlib1g-dev
+cmake
+g++
+make
