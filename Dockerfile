@@ -23,6 +23,7 @@ RUN apt-get update && apt-get install -y \
 
 # Copy the binary from the build stage
 COPY --from=build /app/salt_bot .
+COPY resources/ ./resources/
 
 # Start the bot
 CMD ["./salt_bot"]
