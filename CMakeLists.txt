@@ -8,5 +8,5 @@ find_package(dpp REQUIRED)
 file(GLOB_RECURSE SRC_FILES "src/*.cpp")
 add_executable(${PROJECT_NAME} ${SRC_FILES}) 
 target_link_libraries(${PROJECT_NAME} dpp::dpp)
-
+add_definitions(-DPROJECT_ROOT="${CMAKE_SOURCE_DIR}")
 
