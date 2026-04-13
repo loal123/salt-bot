@@ -8,7 +8,9 @@ RUN apt-get update && apt-get install -y \
     g++ \
     libssl-dev \
     zlib1g-dev \
-    wget
+    wget \
+    libopius-dev \
+    libsodium-dev \
 
 # Install D++ (using the exact link from your Aptfile)
 RUN wget https://github.com/brainboxdotcc/DPP/releases/download/v10.0.35/libdpp-10.0.35-linux-x64.deb \
