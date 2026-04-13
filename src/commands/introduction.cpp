@@ -1,7 +1,7 @@
 #include "introduction.h"
 
 void introduce(const dpp::slashcommand_t& event) {
-    const std::string SALT_EMOJI = "<salt:1493267995139637398>";
+    const std::string SALT_EMOJI = "<:salt:1493267995139637398>";
     std::string intro_message = "Hello! I'm Salt!" + SALT_EMOJI + " from the hit rhythm game Maimai!";
     event.reply(intro_message);
 }
