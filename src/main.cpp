@@ -3,6 +3,7 @@
 #include <iostream>
 #include <cstdlib>
 
+#include "commands/introduction.h"
 #include "commands/registry.h"
 
 int main() {
@@ -18,7 +19,8 @@ int main() {
 
     command_map["ping"] = run_ping;
     command_map["alisa"] = hate_alisa;
-    command_map["quote"] = say_quote; 
+    command_map["quote"] = say_quote;
+    command_map["introduction"] = introduce;
     // The Event Listener
     bot.on_slashcommand([&command_map](const dpp::slashcommand_t& event) {
             std::string cmd_name = event.command.get_command_name();
@@ -41,6 +43,7 @@ int main() {
             register_ping(bot.me.id),
             register_alisa(bot.me.id),
             register_say_quote(bot.me.id),
+            register_introduce(bot.me.id),
         };
         bot.global_bulk_command_create(commands_to_register);
             
