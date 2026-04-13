@@ -1,6 +1,9 @@
-libdpp-dev
-libssl-dev
-zlib1g-dev
+# Direct download for D++ (v10.0.35 is stable, verify on GitHub if you want the absolute latest)
+https://github.com/brainboxdotcc/DPP/releases/download/v10.0.35/libdpp-10.0.35-linux-x64.deb
+
+# System dependencies needed for the build process
 cmake
 g++
 make
+libssl-dev
+zlib1g-dev
