@@ -5,11 +5,14 @@
 #include <random>
 #include <vector>
 #include <string> 
+#include <iostream>
 
 
 void say_quote(const dpp::slashcommand_t &event) {
     std::vector<std::string> quotes;
     std::string path = std::string(PROJECT_ROOT) + "/resources/quotes.txt";
+    std::cerr << "Reading quotes from: " << path << std::endl;
+    std::cerr << "Check if path exists? " << std::filesystem::exists(path) << std::endl;
     std::ifstream file(path);
     std::string quoteline;
     if (file.is_open()) 
