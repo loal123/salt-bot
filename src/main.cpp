@@ -45,6 +45,7 @@ int main() {
             register_say_quote(bot.me.id),
             register_introduce(bot.me.id),
         };
+
         bot.global_bulk_command_create(commands_to_register);
             
         }

@@ -8,6 +8,8 @@ void hate_alisa(const dpp::slashcommand_t &event)
 }
 
 dpp::slashcommand register_alisa(dpp::snowflake bot_id) {
-    return dpp::slashcommand("alisa", "Ew Alisa", bot_id);
+    dpp::slashcommand cmd("alisa", "Ew Alisa", bot_id);
+     cmd.set_interaction_contexts({dpp::itc_guild, dpp::itc_bot_dm, dpp::itc_private_channel});
+    return cmd;
 }
 
